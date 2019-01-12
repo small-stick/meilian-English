@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .con {
+            width: 100%;
+            /*height: 1000px;*/
+            margin: 0px auto;
+        }
+
+        /*设置顶部区域*/
+        .top {
+            width: 100%;
+            height: 50px;
+            background-color: gray;
+        }
+
+        .top-left {
+            float: left;
+            width: 300px;
+
+        }
+
+        .top-right {
+            float: right;
+            width: 500px;
+
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .zhongwen {
+            font-size: 16px;
+            font-family: "微软雅黑";
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .mianfei {
+            background-color: red;
+            color: white;
+            width: 100px;
+            height: 35px;
+            margin-top: 10px;
+        }
+
+        .denglu {
+            background-color: ghostwhite;
+            color: #2f2f2f;
+            width: 50px;
+            height: 35px;
+
+        }
+
+        .top1 {
+            width: 100%;
+            background-color: black;
+            margin: 0px auto;
+        }
+
+        .demo0 {
+            width: 200px;
+            float: left;
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+
+        .demo01 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #00a080;*/
+            /*margin-left: 400px;*/
+            float: left;
+        }
+
+        .demo02 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #416aa0;*/
+            float: left;
+        }
+
+        .demo03 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #a01549;*/
+            float: left;
+        }
+
+        .demo04 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #00a080;*/
+            float: left;
+        }
+
+        .demo05 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #8aa041;*/
+            float: left;
+        }
+
+        .demo06 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #a0811a;*/
+            float: left;
+        }
+
+        .demo07 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #880fa0;*/
+            float: left;
+        }
+
+        .demo08 {
+            width: 100px;
+            /*height: 70px;*/
+            /*background-color: #0ea020;*/
+            float: left;
+        }
+
+        .top1 a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            margin: 0px auto;
+            padding-left: 10px;
+            line-height: 90px;
+        }
+
+        .top1 a:hover {
+            color: grey;
+        }
+
+        .three {
+            width: 100%;
+
+        }
+
+        .three span {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .wenzi {
+            width: 70%;
+            height: 200px;
+            background-color: #090709;
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            line-height: 30px;
+            padding-top: 20px;
+
+        }
+
+        .mianfeizhuce {
+            width: 30%;
+            height: 200px;
+            background-color: #0b0709;
+            float: left;
+            margin: 0px auto;
+            line-height: 50px;
+            padding-top: 20px;
+            text-align: center;
+
+        }
+
+        .mianfeizhuce span {
+            text-align: center;
+            font-size: 18px;
+            line-height: 10px;
+            color: white;
+            font-family: "微软雅黑";
+
+        }
+
+        .mianfeizhuce input {
+            width: 100px;
+            height: 40px;
+            background-color: yellow;
+
+        }
+
+        .wenzi a {
+            color: grey;
+            font-size: 18px;
+            margin: 20px 100px;
+        }
+
+        .wenzi span {
+            color: white;
+            font-size: 18px;
+            line-height: 10px;
+        }
+
+        .three a {
+            text-decoration: none;
+            line-height: 10px;
+
+        }
+
+        .four {
+            width: 100%;
+            height: 100px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .four h1 {
+            font-family: "微软雅黑";
+            color: #55ff8e;
+            margin-top: 50px;
+
+        }
+
+        .five {
+            width: 80%;
+            background-color: aquamarine;
+            margin: 0px auto;
+        }
+
+        .six {
+            width: 100%;
+            height: 500px;
+            background-color: #090709;
+        }
+
+        .six p {
+            font-size: 16px;
+            font-family: "微软雅黑";
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .six-1 span {
+            color: yellow;
+        }
+
+        .zaoqi {
+            width: 275px;
+            height: 200px;
+            /*background-color: #2b29ff;*/
+            float: left;
+            padding-left: 100px;
+            padding-top: 100px;
+        }
+
+        .yemao {
+            width: 275px;
+            height: 200px;
+            /*background-color: #ff3ccb;*/
+            float: left;
+            padding-top: 100px;
+        }
+
+        .zhainan {
+            width: 275px;
+            height: 200px;
+            /*background-color: #9aff3c;*/
+            float: left;
+            padding-top: 100px;
+        }
+
+        .lehuo {
+            width: 275px;
+            height: 200px;
+            /*background-color: #ff3c3d;*/
+            float: left;
+            padding-top: 100px;
+        }
+
+        .zaoqi {
+            color: white;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .zaoqi span {
+            color: #55ff8e;
+            font-size: 22px;
+
+        }
+
+        .yemao {
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            padding-left: 30px;
+        }
+
+        .zhainan {
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            padding-left: 30px;
+        }
+
+        .lehuo {
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            padding-left: 30px;
+        }
+
+        .yemao span {
+            color: #55ff8e;
+            font-size: 22px;
+
+        }
+
+        .zhainan span {
+            color: #55ff8e;
+            font-size: 22px;
+
+        }
+
+        .lehuo span {
+            color: #55ff8e;
+            font-size: 22px;
+
+        }
+
+        .seven {
+            width: 100%;
+            height: 200px;
+            background-color: white;
+            text-align: center;
+            padding-top: 80px;
+
+        }
+
+        .seven p {
+            font-size: 18px;
+            color: grey;
+
+        }
+
+        .seven span {
+            color: #55ff8e;
+            font-size: 28px;
+            line-height: 70px;
+        }
+
+        .eight {
+            width: 1250px;
+
+            margin: 50px 150px;
+            /*background-color: #2b29ff;*/
+
+        }
+
+        .demo1 {
+            border-bottom: 2px solid yellow;
+            float: left;
+        }
+
+        .demo2 {
+
+            float: left;
+margin-left: 50px;
+            border-bottom: 2px solid yellow;
+        }
+
+        .demo3 {
+
+            float: left;
+            margin-top: 50px;
+            border-bottom: 2px solid yellow;
+        }
+
+        .demo4 {
+margin-left: 20px;
+            float: left;
+margin-top: 50px;
+            border-bottom: 2px solid yellow;
+        }
+
+        .demo5 {
+            width: 300px;
+            height: 200px;
+            margin-top: 50px;
+            float: left;
+margin-left: 50px;
+            background-color: palevioletred;
+            text-align: center;
+border-bottom: 2px solid yellow;
+        }
+.demo5 img{
+    padding-top: 30px;
+}
+        .nine {
+            width: 100%;
+            margin: 0px auto;
+            color: #55ff8e;
+            text-align: center;
+        }
+
+        .nine h4 {
+            color: grey;
+            padding-left: 100px;
+        }
+.nanren{
+    margin-left: 200px;
+    margin-top: 100px;
+}
+        .gezi{
+            width: 1200px;
+            height: 300px;
+            margin: 0px auto;
+            /*background-color: #ff68d3;*/
+        }
+        .gezi div{
+            width: 400px;
+            height: 150px;
+            /*background-color: #ff26e6;*/
+            float: left;
+        }
+        .tongyongziti{
+            background-color: #ff3a55;
+        }
+        .gezi h3{
+            text-align: center;
+            color: white;
+            padding-top: 75px;
+        }
+.haiwaiziti{
+    background-color: #ff68d3;
+}
+        .ten h2{
+            color: #55ff8e;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .ten h4{
+            color: grey;
+            text-align: center;
+        }
+        .eleven{
+            width: 1200px;
+            height: 350px;
+/*background-color: #2f2f2f;*/
+            margin: 0px auto;
+            margin-top: 30px;
+        }
+     .hehe{
+         float: left;
+         line-height: 30px;
+         padding-left: 20px;
+
+     }
+        .heihei{
+            float: left;
+            margin-left: 100px;
+            line-height: 30px;
+
+        }
+        .dada{
+            line-height: 30px;
+            float: right;
+            padding-right: 20px;
+
+        }
+        .eleven p{
+            text-align: center;
+            font-size: 18px;
+            color: #090709;
+
+        }
+        .eleven span{
+            color: grey;
+            font-size: 14px;
+            padding-left: 20px;
+        }
+      .eleven a{
+          border-bottom: 3px solid yellow;
+          /*text-decoration: none;*/
+      }
+      .twelve{
+          text-align: center;
+      }
+        .twelve h2{
+            color: #55ff8e;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .twelve span{
+            color: grey;
+            line-height:50px;
+            margin: 0px auto;
+        }
+        .thirteen{
+            width: 900px;
+margin-left: 200px;
+            padding-top: 50px;
+        }
+        .fourteen{
+            width: 100%;
+            background-color: #2f8b6d;
+            line-height: 40px;
+            /*height: 500px;*/
+        }
+        .ul1 li{
+            display: inline-block;
+            list-style: none;
+            padding-left: 100px;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 20px;
+        }
+.ul2 li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 100px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    /*font-size: 20px;*/
+    padding-bottom: 20px;
+}
+        .ul2 span{
+            font-size: 16px;
+        }
+        .ul1 span{
+            font-size: 16px;
+        }
+        .ul1 a{
+            font-size: 30px;
+        }
+        .ul2 a{
+            font-size: 30px;
+        }
+        .fifteen{
+            width: 100%;
+            position: relative;
+        }
+        .fifteen h1{
+            text-align: center;
+            color: #2f8b6d;
+            position: absolute;
+            top:100px;
+            left:500px;
+        }
+        .fifteen span{
+            color: #ffedf0;
+            font-size: 18px;
+        }
+        .chongxiu{
+            float: left;
+            position: absolute;
+            top:300px;
+            left:200px;
+            color: #2f8b6d;
+            font-size: 30px;
+
+        }
+        .tuifei{
+            float: right;
+            position: absolute;
+            top:300px;
+            left:800px;
+            color: #2f8b6d;
+            font-size: 30px;
+        }
+.chongxiu span{
+   font-size: 16px;
+    color: white;
+}
+.gengduo{
+    width: 100%;
+    /*height: 300px;*/
+    margin: 0px auto;
+    /*background-color: #2f8b6d;*/
+}
+        .gengduo h1{
+            color: #2f8b6d;
+           font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+            font-family: "微软雅黑";
+        }
+        .gengduo span{
+            color: grey;
+            font-size: 16px;
+            line-height: 50px;
+        }
+        .demo16{
+            width: 100%;
+            /*height: 600px;*/
+            /*background-color: #4833ff;*/
+margin-top: 50px;
+        }
+.demo16-1{
+    width:100px;
+    /*height: 200px;*/
+    float: left;
+    /*line-height: 20px;*/
+}
+        .demo16-1-1{
+            padding-left: 20px;
+            width: 500px;
+            float: left;
+        }
+        .demo16-1-1 h3{
+            color: #090709;
+            font-size:20px ;
+        }
+.demo16-1-1 span{
+    color: grey;
+    font-size: 13px;
+    line-height: 14px;
+}
+        .demo16-2{
+               width: 100px;
+               height: 200px;
+               float: right;
+               /*line-height: 20px;*/
+           }
+        .demo16-2-2{
+            padding-left: 20px;
+            width: 500px;
+            float: right;
+        }
+        .demo16-2-2 h3{
+            color: #090709;
+            font-size:20px ;
+        }
+        .demo16-2-2 span{
+            color: grey;
+            font-size: 13px;
+            line-height: 14px;
+        }
+        .demo16-2{
+            width: 100px;
+            height: 200px;
+            float: right;
+            /*line-height: 20px;*/
+        }
+        .demo16-3{
+            width: 100px;
+            height: 200px;
+            float:left;
+            /*line-height: 20px;*/
+        }
+        .demo16-3-3{
+            padding-left: 20px;
+            width: 500px;
+            float:left;
+        }
+        .demo16-3-3 h3{
+            color: #090709;
+            font-size:20px ;
+        }
+        .demo16-3-3 span{
+            color: grey;
+            font-size: 13px;
+            line-height: 14px;
+        }
+        .demo16-4{
+            width: 100px;
+            height: 200px;
+            float:right;
+            /*line-height: 20px;*/
+        }
+        .demo16-4-4{
+            padding-left: 20px;
+            width: 500px;
+            float:right;
+        }
+        .demo16-4-4 h3{
+            color: #090709;
+            font-size:20px ;
+        }
+        .demo16-4-4 span{
+            color: grey;
+            font-size: 13px;
+            line-height: 14px;
+        }
+.demo17{
+    width: 100%;
+    height: 500px;
+    background-image: url("bg3.jpg");
+    background-repeat: no-repeat;
+
+}
+        .demo17 h3{
+            color: #2f8b6d;
+            font-size: 30px;
+           padding-top: 100px;
+            text-align: center;
+        }
+        .demo17 div{
+            float: left;
+            padding-left: 50px;
+            padding-top: 70px;
+        }
+        .demo17 h4{
+            color: white;
+            background-color: darkgray;
+            font-size: 14px;
+            text-align: center;
+        }
+        .demo18{
+            width: 100%;
+            /*height: 300px;*/
+            text-align: center;
+            margin-top: 50px;
+            line-height: 50px;
+        }
+        .demo18 h1 {
+            color: #2f8b6d;
+        }
+        .demo18 span{
+            color: grey;
+        }
+.demo19 div{
+    width: 200px;
+    height: 100px;
+    float: left;
+    padding-left: 110px;
+    /*border: 1px dashed seagreen;*/
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*position: relative;*/
+}
+
+
+
+        .demo19-1{
+    border: 1px dashed seagreen;
+}
+        .demo19-2{
+            border: 1px dashed seagreen;
+        }
+        .demo19-3{
+            border: 1px dashed seagreen;
+        }
+        .demo19-4{
+            border: 1px dashed seagreen;
+        }
+        .demo19 h4{
+            color: grey;
+            font-size: 12px;
+
+        }
+        .aa{
+            width: 50px;
+            height: 20px;
+            color: white;
+            background-color: red;
+        }
+        .demo19-2{
+            margin-left: 20px;
+        }
+        .demo19-3{
+            margin-left: 20px;
+        }
+        .demo19-4{
+            margin-left: 20px;
+        }
+        .demo19-2 input{
+            width: 150px;
+            height: 20px;
+
+        }
+        .cc{
+            width: 150px;
+            height: 20px;
+        }
+        .dd{
+            width: 150px;
+            height: 20px;
+            padding-right: 20px;
+        }
+        .demo20{
+            width: 1300px;
+            height: 800px;
+            background-image: url("bg.png");
+            background-repeat: no-repeat;
+            margin: 0px auto;
+
+        }
+        .demo20 h1{
+            color: #2f8b6d;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+        .demo20 p{
+            color: white;
+        }
+        .demo20 div{
+              padding-left: 10px;
+              float: left;
+              /*margin-top: 100px;*/
+          }
+
+        .demo20-1 div{
+            padding-left: 30px;
+            float: left;
+
+        }
+        .demo20-1 h1{
+
+            text-align: center;
+            padding-left: 100px;
+padding-bottom: 50px;
+        }
+        .bottom div{
+            float: left;
+           padding-left: 40px;
+            padding-top: 50px;
+        }
+        .bottom{
+            width:1300px;
+            height: 300px;
+            background-color: rgba(29, 34, 16, 0.87);
+            margin: 0px auto;
+        }
+.bottom a{
+    color: grey;
+
+text-decoration: none;
+
+}
+  .aa1 a：hover {
+      color: yellow;
+  }
+        .meilian h5{
+            color: grey;
+            text-align: center;
+            padding-left: 400px;
+
+        }
+.demo5 h5{
+    color: white;
+}
+ </style>
+</head>
+<body>
+<div class="con">
+    <div class="top">
+        <div class="top-left">
+            <p class="zhongwen">400-777-8828&nbsp中文&nbsp&nbsp英文</p>
+        </div>
+        <div class="top-right">
+            <input type="submit" value="免费注册" class="mianfei"/>
+            <input type="submit" value="登录" class="denglu"/>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <!--第二部分-->
+        <div class="top1">
+            <div class="demo0"><img src="logo_09.png" /></div>
+            <div class="demo01"><a href="">首页</a></div>
+            <div class="demo02"><a href="">通用英语</a></div>
+            <div class="demo03"><a href="">海外考试</a></div>
+            <div class="demo04"><a href="">青少英语</a></div>
+            <div class="demo05"><a href="">行业英语</a></div>
+            <div class="demo06"><a href="">在线购买</a></div>
+            <div class="demo07"><a href="">全球师资</a></div>
+            <div class="demo08"><a href="">更多栏目</a></div>
+            <div class="clear"></div>
+        </div>
+
+    <div class="three">
+        <div class="tupian"><a href=""><img src="img3.jpg" width="100%"/></a></div>
+        <div class="tupian-2">
+            <div class="wenzi"><a href=""><span>用英语为梦想加油！10周年，不失梦想正青春！</span><br/>美联英语在线VIP隶属于美联国际教育集团，自2006年初创，至今已整整走过10年，<br/>15个省份，26个城市，80多家中心，20多万学员，我们让更多中国面孔成为世界的中坚力量！从线上到线下，从中国到北美，我们致力于让每一个<br/>与世界相联的美好梦想，都能实现。加入我们，用英语为梦想加油！</a>
+            </div>
+            <div class="mianfeizhuce"><span>免费试听+水平测试</span><br/>
+                <input type="submit" value="立即申请"/></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="four"><h1>真的没有时间学习英语吗？</h1></div>
+    <div class="five">
+        <div class="shujutu"><img src="trend.png"></div>
+    </div>
+    <div class="six">
+        <p class="six-1">
+            <span>30%</span>的人群在<span>早8点前</span>和<span>晚22点后</span>进行在线学习，每天至少可多得<span>5小时</span>学习时间；<br/>
+            线下培训班，往返路程平均浪费<span>1.5小时</span>，在线学习帮你节省时间用来享受生活。</p>
+
+        <div class="zaoqi"><h4>我是</h4><br/><span>早起族</span><br/><br/><h5>早7点别人还在睡觉，而我在跟英国外教网聊下午茶</h5></div>
+        <div class="yemao"><h4>我是</h4><br/><span>夜猫子</span><br/><br/><h5>夜深人静时，我的注意力最专注，此时不学更待何时</h5></div>
+        <div class="zhainan"><h4>我是</h4><br/><span>宅男/女</span><br/><br/><h5>不出门也可以跟外教嗨聊，全世界的新鲜事照样全知道</h5></div>
+        <div class="lehuo"><h4>我是</h4><br/><span>乐活族</span><br/><br/><h5>你还在去上课的路上，我已经躺在沙发上学完在看电影</h5></div>
+        <div class="clear"></div>
+    </div>
+    <div class="seven"><p><span>2000+全球师资 100%欧美外教</span><br/>TESOL证书 / 5年以上教龄/ 高颜值外教团</p></div>
+    <div class="eight">
+        <div class="demo1"><img src="oleg.png"width="700px"height="300px"/></div>
+        <div class="demo2"><img src="oksana.png"width="300px"height="300px"/></div>
+        <div class="demo3"><img src="ewelina.png"width="340px"height="200px"/></div>
+        <div class="demo4"><img src="juraj.png"width="340px"height="200px"/></div>
+        <div class="demo5"><img src="tmore.png"width="100px"height="100px"/><br/><h5>查看更多</h5></div>
+        <div class="clear"></div>
+    </div>
+    <div class="nine">
+        <h1>6+课程体系，总有一款适合你</h1>
+        <br/>
+        <h4>10教育行业背景，1000专业研发团队，针对不同学习需求，打造全面完善的课程体系</h4>
+    </div>
+    <div class="nanren"><img src="cover.png"/></div>
+    <div class="gezi">
+        <div class="tongyongziti"><h3>通用英语</h3></div>
+        <div class="haiwaiziti"><h3>海外英语</h3></div>
+        <div class="tongyongziti"><h3>青少英语</h3></div>
+        <div class="haiwaiziti"><h3>行业英语</h3></div>
+        <div class="tongyongziti"><h3>旅游英语</h3></div>
+        <div class="haiwaiziti"><h3>面试英语</h3></div>
+    </div>
+    <div class="ten"><h2>有伴有爱有力量，再也不怕学习没动力</h2>
+        <br/>
+        <h4>学习从来不是轻松事，与其孤身奋战，不如找到志同道合小伙伴一起坚持到底，免费的哦</h4>
+    </div>
+    <div class="eleven">
+        <div class="hehe"><a><img src="01.jpg" ></a><p>学习太苦，坚持不住</p><br/><span>学伴功能，一键添加小伙伴。 免费一起学，<br/>互相督促进步快！</span></div>
+        <div class="heihei"><a><img src="02.jpg"/></a><p>出国旅行，口语太差</p><br/><span>学伴功能，免费添加全部旅伴。 一起恶补，<br/>齐心协力出国不愁！</span></div>
+        <div class="dada"><a><img src="03.jpg"/></a><p>是英语课，也是交友会</p><br/><span>20多个城市，70多家美联中心， I Show活动课，<br/>欢迎一起来玩耍！</span></div>
+    <div class="clear"></div>
+    </div>
+    <div class="twelve"><h2>真金白银选老师</h2><span>教你学的人和督促你学的人，最重要！评分与评语有时并不客观，你懂哒。所以，我们开放打赏功能，真金白银的来检验教学与服务。</span></div>
+<div class="thirteen"><img src="teacher.jpg" width="900px "height="400"/></div>
+    <div class="fourteen">
+        <div class="meigeyue">
+            <ul class="ul1">
+                <li><a>2%</a><br/> <span>合同金额的2%自动转换为学员打赏U币</span> </li>
+                <li><a>1U币=1RMB </a><br/><span>直接以现金形式全部兑换给教师</span> </li>
+                <li><a>每节课 </a><br/><span>学员都可以对老师进行打赏与评价</span> </li>
+
+            </ul>
+            <ul class="ul2">
+                <li><a>每个月</a><br/><span>对自己的学习指导进行打赏与评价</span></li>
+                <li><a>教师考核</a><br/><span>打赏是考核老师教学质量最重要的参考指标</span></li>
+                <li><a>SA考核</a><br/><span>打赏情况是我们最重要的考核参考指标</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="fifteen"><img src="bg2.jpg" />
+        <h1>0风险，不满意随时退<br/><span>我们懂你，才知道放飞自由的意义！梦想可以暂缓，但不要失去！</span></h1>
+    <div class="chongxiu"><a><img src="01.png"/></a><p>随时重修</p><br/><span>如果你对课程、教师、学习平台的课后评价任意一项≤1分，<br/>该节课将会返还课时可进行重修，<br/>以保障你每一节课的学习效果。</span></div>
+    <div class="tuifei"><a><img src="01.png"/></a><p>随时退费</p><br/><span>如不满意，全程可随时退费。<br/>我们颠覆规则，只为让每一位英语学习者可以轻松无忧的做选择，<br/>用客户的选择检验我们的产品。</span></div>
+    <div class="clear"></div>
+    </div>
+    <div class="gengduo"><h1>更多特色服务<br/><span>4+核心优势 N+成效保障</span></h1></div>
+<div class="demo16">
+    <div class="demo16-1"><img src="3.png"width="100px"height="100px"></div>
+     <div class="demo16-1-1"><h3>担心计划没有变化快？4小时+随订随上<br/><span>学习之所以难以坚持，有时仅仅因为计划没有变化快：会议取消、约会提前、行程更改... 我们打破了24小时的桎梏，打造行业内唯一可课前4小时订课/退课机制，更有推荐课程，可随时预订随时上。让你真正以不变应万变。</span><h3/></div>
+     <div class="clear"></div>
+</div>
+    <div class="demo16-2"><img src="4.png"width="100px"height="100px"></div>
+    <div class="demo16-2-2"><h3>需要帮助？需要督促？“保姆式”学习管理服务<br/><span>温暖的问候永远优于冰冷机器的制式化自动应答，我们始终坚持提供充满温度感的真人学习管理服务。为每位学员配备专属学习指导，量身打造学习计划、管理学习进度，高效高颜值的真人在线SA团队，为你的学习保驾护航。</span></h3></div>
+   <div class="clear"></div>
+    <div class="demo16-3"><img src="5.png"width="100px"height="100px"/></div>
+    <div class="demo16-3-3"><h3>学员福利出国游！学英语，看世界！<br/><span>2015年开始，我们将以旅行的方式，带学员们深度走访全球自然与文化处所。这将是一场跨越20年甚至更久的旅程，161个国家及地区，1007个人类文明及自然遗产...语言，是认知世界的工具！我们愿做你认知世界的伙伴！</span></h3></div>
+    <div class="clear"></div>
+    <div class="demo16-4"><img src="6.png"width="100px"height="100px"/></div>
+<div class="demo16-4-4"><h3>免费送！海量学习资源！课程复习+课后巩固<br><span>你学习过的每节课程都有同步录像，上课时，你只需专心听讲，无需分心记笔记；课后，可随时免费查看录像，进行高效便捷复习；英语胶囊（7000多互动学习视频）、掌中英语、词管家APP等学习资源，帮你利用碎片时间巩固学习。</span></h3></div>
+<div class="clear"></div>
+    <div class="demo17">
+        <h3>学英语，看世界！小美带你GO学员微电影</h3>
+        <div><img src="4.jpg"/><br/><h4>学员旅行微电影 - 清迈篇</h4></div>
+        <div><img src="5.jpg" /><br/><h4>学员旅行微电影 - 斯里兰卡篇</h4></div>
+        <div><img src="6.jpg" /><br/><h4>小美带你GO - 精彩花絮1</h4></div>
+        <div><img src="7.jpg" /><br/><h4>小美带你GO - 精彩花絮2</h4></div>
+        <div class="clear"></div>
+    </div>
+    <div class="demo18"><h1>学习流程</h1><span>仅需4步，轻松开启在线学习之旅</span></div>
+<div class="demo19">
+    <div class="demo19-1"><img src="step1.png"/><br/><h4>会员登录/注册</h4><br/>
+        <input type="submit"value="登录"/><input type="submit"value="注册"class="aa"/>
+    </div>
+    <div class="demo19-2"><img src="step2.png" /><br/><h4>购买相关课程</h4>
+        <input type="submit"value="购买课程"class="bb"/>
+    </div>
+    <div class="demo19-3"><img src="step3.png" /><br/><h4>自选外教/时间/主题</h4>
+        <input type="submit"value="预约课程"class="cc"/>
+    </div>
+    <div class="demo19-4"><img src="step4.png" /><br/><h4>电脑/PAD/手机，均可上课</h4>
+        <input type="submit"value="上课环境监测"class="dd"/>
+    </div>
+</div>
+    <div class="clear"></div>
+<div class="demo20">
+    <h1>企业荣誉</h1>
+    <div><img src="credit-01.png" />
+        <br/>
+        <p>CCTV希望之星英语风采大赛<br/>国际唯一战略<br/>合作伙伴</p>
+    </div>
+    <div><img src="credit-02.png" />
+       <p><br/>2014年度教育盛典十大知<br/>名外语培训机构</p> </div>
+    <div><img src="credit-03.png" />
+        <p><br/>亚太总裁国际合作大会<br/>唯一指定语言服务供应商</p></div>
+    <div><img src="credit-04.png"/>
+        <p><br/>2014年度中国最具<br/>创新力在线教育品牌</p></div>
+    <div><img src="credit-05.png" />
+       <p> <br/>外研社体验式<br/>英语战略合作伙伴</p></div>
+    <div><img src="credit-06.png" />
+       <p><br/>第26届世界大学生运动会<br/>指定英语培训机构</p> </div>
+    <div class="clear"></div>
+<div class="demo20-1">
+    <h1>合作伙伴</h1>
+    <div><img src="customer-01.png" alt=""/></div>
+    <div><img src="customer-02.png" alt=""/></div>
+    <div><img src="customer-03.png" alt=""/></div>
+    <div><img src="customer-04.png" alt=""/></div>
+    <div><img src="customer-05.png" alt=""/></div>
+    <div><img src="customer-06.png" alt=""/></div>
+</div>
+
+</div>
+<div class="bottom">
+    <div class="aa1"><img src="qualification_001.png" alt=""/><a href="">中国互联网诚信联盟</a></div>
+    <div class="aa2"><img src="qualification_002.png" alt=""/><a href="">网上交易保障中心</a></div>
+    <div class="aa3"><img src="qualification_003.png" alt=""/><a href="">可信网站认证"</a></div>
+    <div class="aa4"><img src="qualification_004.png" alt=""/><a href="">诚信网站认证</a></div>
+    <div class="aa5"><img src="qualification_005.png" alt=""/><a href="">经营性网站备案信息</a></div>
+    <div class="aa6"><img src="qualification_006.png" alt=""/><a href="">安全联盟</a></div>
+    <div class="clear"></div>
+<div class="meilian"><h5>美联英语&nbsp&nbsp版权所有 </h5><br/>
+    <h5>Copyright ©2010-2016 粤ICP备12018421号 ，电话：400-777-8828</h5><br/>
+    <h5>友情链接：<a href="#">美联英语 学习网</a></h5>
+</div>
+</div>
+</div>
+
+</body>
+</html>
